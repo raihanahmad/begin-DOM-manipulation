@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Bubbling And Delegation</title>
+  <style>
+    body {
+      background-color: #e1e1e1;
+      height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #container {
+      max-width: 300px;
+      background-color: #fff;
+      margin: auto;
+      padding: 0rem 2rem 2rem;
+    }
+
+    .delete-a {
+      color: red;
+      margin-left: 2rem;
+      cursor: pointer;
+    }
+
+    .delete-a:hover {
+      color: #600;
+    }
+
+    .remove-task {
+      padding: .6rem 2rem;
+      background-color: #333;
+      text-decoration: none;
+      color: #f3f3f3;
+    }
+
+    .remove-task:hover {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="container">
+    <form action="prosess.php">
+      <input type="text" name="text" id="text" value="Sayanything">
+      <input type="submit" value="Submit" id="submit">
+    </form>
+    <select>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <h1 id="list-title">This is a outsite same class</h1>
+    <ul id="main-list">
+      <li class="item">Item 1 <a class="delete-a">x</a></li>
+      <li class="item">Item 2 <a class="delete-a">x</a></li>
+      <li class="item">Item 3 <a class="delete-a">x</a></li>
+      <li class="item">Item 4 <a class="delete-a">x</a></li>
+      <li class="item">Item 5 <a class="delete-a">x</a></li>
+      <li class="item">Item 6 <a class="delete-a">x</a></li>
+      <li class="item">Item 7 <a class="delete-a">x</a></li>
+      <li class="item">Item 8 <a class="delete-a">x</a></li>
+      <li class="item">Item 9 <a class="delete-a">x</a></li>
+      <li class="item">Item 10 <a class="delete-a">x</a></li>
+    </ul>
+    <a href="#" class="remove-task">Remove Task</a>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
