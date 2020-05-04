@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local and Session Storage</title>
+  <style>
+    body {
+      background-color: #eeeeee;
+      padding-bottom: 5rem;
+    }
+
+    #container {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 230px;
+      margin: auto;
+      background-color: #fff;
+      padding: 1rem 2rem 3rem;
+      border-radius: 20px;
+      box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, .1);
+      color: #333;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    #text {
+      padding: .4rem;
+      display: block;
+      outline: none;
+      margin-bottom: 1.1rem;
+      border-radius: 6px;
+      border: 1px solid #333;
+    }
+
+    #add {
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: #fff;
+      padding: .5rem 3rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      outline: none;
+    }
+
+    #add:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="container">
+    <form id="form" action="#">
+      <h2>Add Somthing</h2>
+      <input type="text" id="text">
+      <input type="submit" id="add" value="add">
+    </form>
+  </section>
+
+  <!-- js file include -->
+  <script src="main.js"></script>
+</body>
+
+</html>
